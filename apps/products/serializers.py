@@ -5,5 +5,10 @@ from apps.products.models import Product
 class ProductSerializer(Serializer):
     class Meta:
         model = Product
-        fields = '__all__'
-        
+        fields = [
+        "id",
+        "title",
+        "description",
+        "price",
+        ]
+
